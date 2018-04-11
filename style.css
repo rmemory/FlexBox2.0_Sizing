@@ -1,0 +1,48 @@
+/* Some default styles to make each box visible */
+.box {
+	/* A few properties for the font */
+	color:white;
+	font-size: 50px;
+	text-align: center;
+	text-shadow:4px 4px 0 rgba(0,0,0,0.1);
+
+	/* padding properties are used to generate space around an element's content, 
+	   inside of any defined borders. */
+	padding:10px;
+}
+	
+	/* Colours for each box */
+	.box1 { background:#1abc9c;}
+	.box2 { background:#3498db;}
+	.box3 { background:#9b59b6;}
+	.box4 { background:#34495e;}
+	.box5 { background:#f1c40f;}
+	.box6 { background:#e67e22;}
+	.box7 { background:#e74c3c;}
+	.box8 { background:#bdc3c7;}
+	.box9 { background:#2ecc71;}
+	.box10 { background:#16a085;}
+
+.container {
+	display:flex;
+}
+
+.box1 {
+	/* flex: 1; Gives all of the boxes equal spacing across the screen. They grow enough to fill the space.
+				Stated differently: The available space is divided equally between all children
+				This is a shorthand of setting flex-grow = 1 and flex-shrink = 1. */
+
+	flex-grow: 10;  /* A property to indicate how much it should grow, can be any postive integer 
+					  The default flex-grow is zero. Flex-row is all about how it handles the extra
+					  space. */
+	flex-shrink: 10; /* A property to indicate how much it should shrink, zero is as small as possible.
+						Flex-shrink is about how it handles space as things get smaller than they should be */
+	flex-basis: 400px; /* How big in pixels should the element be along the main axis before any growing or shrinking */
+	/* flex: 10 10 400px; */
+}
+
+.box2 {
+	/* flex: 2; Makes box2 twice as big as the others */
+	flex-basis: 400px; /* How big in pixels should the element be along the main axis before any growing or shrinking */
+}
+	
