@@ -27,22 +27,38 @@
 	display:flex;
 }
 
-.box1 {
-	/* flex: 1; Gives all of the boxes equal spacing across the screen. They grow enough to fill the space.
-				Stated differently: The available space is divided equally between all children
+/* The flex property is applied to flex items, not the container.
+
+   **** The flex property is all about telling an item what to do with additional or
+		not enough space ****
+		
+	The default "flex" value is "auto", meaning the item takes up as much room as its content
+*/
+
+	.box {
+			flex: 1; /* This gives all of the boxes equal spacing across the screen. They grow enough to fill 
+				the space.Stated differently: The available space is divided equally between all children
 				This is a shorthand of setting flex-grow = 1 and flex-shrink = 1. */
+	}
+
+
+ /* Any of these could be set to auto */
+.box1 {
 
 	flex-grow: 10;  /* A property to indicate how much it should grow, can be any postive integer 
 					  The default flex-grow is zero. Flex-row is all about how it handles the extra
 					  space. */
 	flex-shrink: 10; /* A property to indicate how much it should shrink, zero is as small as possible.
-						Flex-shrink is about how it handles space as things get smaller than they should be */
-	flex-basis: 400px; /* How big in pixels should the element be along the main axis before any growing or shrinking */
+						Flex-shrink is about how it handles space as things get smaller than they 
+						should be */
+	flex-basis: 400px; /* How big in pixels should the element be along the main axis before any growing 
+						  or shrinking */
 	/* flex: 10 10 400px; */
 }
 
 .box2 {
 	/* flex: 2; Makes box2 twice as big as the others */
-	flex-basis: 400px; /* How big in pixels should the element be along the main axis before any growing or shrinking */
+	flex-basis: 400px; /* How big in pixels should the element be along the main axis before any 
+						  growing or shrinking */
 }
 	
